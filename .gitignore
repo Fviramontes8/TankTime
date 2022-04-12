@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 # Ignoring starter content as that can be downloaded from Unreal
 Content/StarterContent/
+
+# Folder that generates independent game
+FullGame/
