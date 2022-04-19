@@ -16,10 +16,11 @@ class TANKTIME_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
 	
-	
-public:
+private:
 	ATank* GetAITank() const;
+	ATank* GetPlayerTank() const;
 
+public:
 	virtual void BeginPlay() override;
 	
 };
