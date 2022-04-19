@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "Tank.h"
+
 #include "CoreMinimal.h"
 #include "AIController.h"
 #include "TankAIController.generated.h"
@@ -15,6 +17,9 @@ class TANKTIME_API ATankAIController : public AAIController
 	GENERATED_BODY()
 	
 	
-	
+public:
+	ATank* GetAITank() const;
+
+	virtual void BeginPlay() override;
 	
 };
