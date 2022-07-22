@@ -4,17 +4,26 @@
 
 
 
-
+/*
+Will try to find all AI tanks that are spawned on the map
+*/
 ATank* ATankAIController::GetAITank() const 
 {
 	return Cast<ATank>(GetPawn());
 }
 
+/*
+Will look for player tank in the current game instance
+*/
 ATank* ATankAIController::GetPlayerTank() const
 {
 	return Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
 }
 
+/*
+If the current instance is an AI tank, it will log its instance details
+Otherwise, if it is a player, it will log the player instance name
+*/
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
